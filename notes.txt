@@ -1,0 +1,20 @@
+sudo snap install go --classic
+
+go version
+
+go run <file-name>
+
+go run functions.go pkg.go
+
+go mod init basics
+
+go mod tidy
+
+go get github.com/google/uuid
+
+json
+api-request
+creating routes
+async
+encryption
+
