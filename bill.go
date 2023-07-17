@@ -60,7 +60,7 @@ func (b *Bill) saveToFile() {
 	err := ioutil.WriteFile("bill/"+b.name+".txt", data, 0644)
 	if err != nil {
 		fmt.Println(err)
-		// panic(err)
+		panic(err)
 	}
 	fmt.Println("bill saved successfully.")
 }
