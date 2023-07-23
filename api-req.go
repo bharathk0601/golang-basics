@@ -12,8 +12,7 @@ func makeApiCall() {
 	makePostReq()
 }
 
-func makeGetReq() {
-	const url = "https://jsonplaceholder.typicode.com/posts"
+func makeGetReq(url string) {
 	res, err := http.Get(url)
 
 	if err != nil {
@@ -26,8 +25,7 @@ func makeGetReq() {
 	var js []map[string]interface{}
 	json.Unmarshal(resBody, &js)
 
-	fmt.Println(js[0]["title"])
-	fmt.Println("StatusCode", res.StatusCode)
+	fmt.Println(url, "StatusCode", res.StatusCode)
 }
 
 func makePostReq() {
