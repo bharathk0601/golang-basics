@@ -14,7 +14,7 @@ func writeFile() {
 	data := []byte(`hello world`)
 	ioutil.WriteFile("f1.txt", data, 777)
 }
-func main1() {
+func files() {
 	readFile()
 	writeFile()
 }
